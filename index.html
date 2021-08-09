@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+	<title>LIFF - LINE Front-end Framework</title>
+</head>
+<body>
+	<script src="https://static.line-scdn.net/liff/edge/versions/2.6.0/sdk.js"></script>
+	<script>
+	  async function main() {
+		  await liff.init({ liffId: "1656281874-ljx7Pq51" })
+		  await liff.shareTargetPicker([
+		   {
+		      type: "flex",
+			    altText: "Flex Message from Share Target Picker",
+			    contents: {
+  "type": "bubble",
+  "direction": "rtl",
+  "hero": {
+    "type": "image",
+    "url": "https://www.img.in.th/images/9e2eec4a9a4411e204e5c8b0a90d3dda.jpg",
+    "size": "full",
+    "aspectRatio": "16:9",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 1,
+        "contents": [
+          {
+            "type": "text",
+            "text": "นอร์บี้ ไอเอฟ vs ออร์ไกร์ท",
+            "flex": 0,
+            "align": "center",
+            "wrap": true,
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "ออร์ไกร์ท 0.5",
+            "weight": "bold",
+            "color": "#000000FF",
+            "align": "center",
+            "contents": []
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ทักหาป๋าส่วนตัว",
+              "uri": "https://bit.ly/2RdxH5X"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สมัครสมาชิก",
+              "uri": "https://bit.ly/2RdxH5X"
+            },
+            "color": "#FF0808FF",
+            "style": "primary"
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ดูVDOวิเคราะห์",
+          "uri": "https://www.youtube.com/watch?v=_IqR-lYe7D0"
+        }
+      }
+    ]
+  }
+}
+		   }
+		])
+		liff.closewindow()
+	  }
+	  main()
+ 	</script>
+</body>
+</html>
